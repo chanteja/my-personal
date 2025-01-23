@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal to Navya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #ff3366;
+            margin-top: 20px;
+        }
+
+        .heart {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            animation: pulse 2s infinite;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: #ff3366;
+            border-radius: 50%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .heart:before {
+            left: 0;
+        }
+
+        .heart:after {
+            left: auto;
+            right: 0;
+        }
+
+        .heart-shape {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: #ff3366;
+            transform: rotate(45deg);
+            top: 0;
+            left: 0;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .points {
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 500px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .points p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dear Navya,</h1>
+    <div class="heart">
+        <div class="heart-shape"></div>
+    </div>
+    <h2>Will you be the queen of my heart?</h2>
+
+    <div class="points">
+        <p>❤️ Love is not just looking at each other, it's looking in the same direction.</p>
+        <p>❤️ True love is about growing together, through ups and downs.</p>
+        <p>❤️ My heart finds its rhythm in your smile.</p>
+        <p>❤️ Navya, you make my world complete.</p>
+    </div>
+
+    <h2>Designed with ❤️ by Teja</h2>
+    <div class="footer">
+        &copy; 2025 Teja's Creations
+    </div>
+</body>
+</html>
